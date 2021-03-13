@@ -6,6 +6,18 @@
     z-index: 3;
     background: rgba($color: #000000, $alpha: 0.7);
     transition: 0.3s;
+    .message {
+      color: red;
+      position: absolute;
+      z-index: 4;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      background-color: white;
+      padding: 5px;
+      pointer-events: none;
+    }
     .close {
       position: absolute;
       width: 40px;
@@ -146,6 +158,18 @@
     height: 100vh;
     z-index: 3;
     background: rgba($color: #000000, $alpha: 0.7);
+    .message {
+      color: red;
+      position: absolute;
+      z-index: 4;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      background-color: white;
+      padding: 5px;
+      pointer-events: none;
+    }
     .form {
       position: absolute;
       top: 50%;

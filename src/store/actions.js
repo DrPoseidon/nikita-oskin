@@ -16,6 +16,6 @@ export default {
   async SEND_EMAIL({ commit }, data) {
     const res = await axios.post("https://api.nikitaoskin.ru/sendEmail", data);
     commit;
-    return !!(res.data === "OK");
+    return res.status;
   }
 };

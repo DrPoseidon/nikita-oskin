@@ -4,6 +4,9 @@
     :leave-active-class="$style.fadeout"
   >
     <div :class="$style.sendEmail">
+      <div :class="$style.message" v-show="messageVisability">
+        {{ message }}
+      </div>
       <div :class="$style.form">
         <a @click="CHANGE_VISIBILITY_EMAIL()">
           <img
@@ -58,7 +61,8 @@ export default {
       name: "",
       date: "",
       phone: "",
-      message: "Сообщение успешно отправлено"
+      message: "",
+      messageVisability: false
     };
   },
   methods: {
@@ -94,10 +98,12 @@ export default {
       if (data.name && data.date && data.phone) {
         data.date = this.getRusDate(data.date);
         this.SEND_EMAIL(data).then(response => {
-          if (response) {
-            this.message = "Завка отправлена";
+          if (response === 200) {
+            this.CHANGE_VISIBILITY_EMAIL();
+          } else {
+            this.messageVisability = true;
+            this.message = "Ошибка при отправке сообщения";
           }
-          this.CHANGE_VISIBILITY_EMAIL();
         });
       }
     },
