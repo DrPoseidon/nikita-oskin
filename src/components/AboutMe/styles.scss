@@ -1,0 +1,62 @@
+@media (min-width: 1200px) {
+  .aboutMe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .h2 {
+      font-size: 40px;
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+    hr {
+      margin-bottom: 30px;
+      width: 30%;
+      border: none;
+      background-color: black;
+      color: black;
+      height: 2px;
+    }
+    .myPhoto {
+      width: 50%;
+      margin: 20px;
+    }
+    .block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+    .text {
+      font-size: 20px;
+      text-align: justify;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .aboutMe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .h2 {
+      font-size: 40px;
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+    .myPhoto {
+      width: 200px;
+    }
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+    }
+    .text {
+      margin-top: 20px;
+      font-size: 15px;
+      text-align: justify;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@media (max-width: 1200px) {
+  .video {
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  .email {
+    position: fixed;
+    right: 5px;
+    bottom: 140px;
+    width: 30px;
+    z-index: 1;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 20%;
+    padding: 0px 5px;
+  }
+  .fadein {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  .fadeout {
+    animation: fadeOut 0.3s ease-in-out;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .email:hover {
+    transform: scale(1.2);
+  }
+  .upBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 90px;
+    width: 30px;
+    z-index: 1;
+    transition: 0.3s;
+    transform: rotate(-90deg);
+    animation: fadeIn 0.3s ease-in-out;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  .upBtn:hover {
+    transform: rotate(-90deg) scale(1.2);
+  }
+}
+@media (min-width: 1200px) {
+  .video {
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  .upBtn {
+    position: fixed;
+    right: 25px;
+    bottom: 150px;
+    width: 40px;
+    z-index: 1;
+    transition: 0.3s;
+    transform: rotate(-90deg);
+    animation: fadeIn 0.3s ease-in-out;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  .upBtn:hover {
+    transform: rotate(-90deg) scale(1.2);
+  }
+  .email {
+    position: fixed;
+    right: 20px;
+    bottom: 200px;
+    width: 40px;
+    z-index: 1;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 20%;
+    padding: 0px 5px;
+  }
+  .fadein {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  .fadeout {
+    animation: fadeOut 0.3s ease-in-out;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .email:hover {
+    transform: scale(1.2);
+  }
+}

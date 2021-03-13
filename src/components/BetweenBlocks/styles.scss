@@ -1,0 +1,43 @@
+@media (min-width: 1200px) {
+  .betweenBlocks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    .h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    hr {
+      margin-bottom: 30px;
+      width: 30%;
+      border: none;
+      background-color: black;
+      color: black;
+      height: 2px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .betweenBlocks {
+    padding-top: 80px;
+    margin-top: -60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    hr {
+      margin-bottom: 30px;
+      width: 70%;
+      border: none;
+      background-color: black;
+      color: black;
+      height: 2px;
+    }
+  }
+}

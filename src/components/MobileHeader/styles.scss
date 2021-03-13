@@ -1,0 +1,79 @@
+.mobileHeader {
+  .bigHeader {
+    background-color: rgba($color: black, $alpha: 0.3);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    .mainLogo {
+      width: 250px;
+      border-radius: 50%;
+    }
+    a {
+      position: absolute;
+      right: 20px;
+      transition: transform 0.3s;
+      .hamburger {
+        cursor: pointer;
+        filter: invert(1);
+        width: 30px;
+      }
+    }
+    a:hover {
+      transform: scale(1.2);
+    }
+  }
+  .dropDown {
+    animation: drop-down 0.3s ease-in;
+  }
+  .riseUp {
+    animation: rise-up 0.3s ease-in;
+  }
+
+  @keyframes drop-down {
+    0% {
+      transform: translate(0, -100%);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  @keyframes rise-up {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, -100%);
+    }
+  }
+  .miniHeader {
+    background-color: rgba($color: #000000, $alpha: 1);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    a {
+      position: absolute;
+      right: 20px;
+      transition: transform 0.3s;
+      .hamburger {
+        cursor: pointer;
+        filter: invert(1);
+        width: 30px;
+      }
+    }
+    a:hover {
+      transform: scale(1.2);
+    }
+  }
+}

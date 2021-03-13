@@ -1,0 +1,100 @@
+@media (min-width: 1200px) {
+  .portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .h2 {
+      font-size: 40px;
+      padding-top: 70px;
+      margin-bottom: 30px;
+    }
+    hr {
+      margin-bottom: 30px;
+      width: 30%;
+      border: none;
+      background-color: black;
+      color: black;
+      height: 2px;
+    }
+    .wedding {
+      margin-bottom: 120px;
+      font-size: 30px;
+    }
+    .videos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+
+      .videoBlock {
+        width: 25%;
+        padding: 5px;
+        margin: 0 40px 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s 0.2s;
+        &:nth-child(3n + 2) {
+          transform: translate(0, -20%);
+        }
+        .video {
+          width: 100%;
+        }
+
+        .p {
+          font-size: 20px;
+          margin: 5px 0;
+        }
+      }
+      .videoBlock:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .h2 {
+      font-size: 40px;
+      padding-top: 70px;
+      margin-bottom: 30px;
+    }
+    .wedding {
+      font-size: 30px;
+    }
+    .videos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+
+      .videoBlock {
+        width: 60%;
+        padding: 5px;
+        // margin: 0 40px 20px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s 0.2s;
+        .video {
+          width: 100%;
+        }
+
+        .p {
+          font-size: 20px;
+          margin: 5px 0;
+        }
+      }
+      .videoBlock:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
