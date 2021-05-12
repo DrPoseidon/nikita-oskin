@@ -9,6 +9,12 @@
       muted
       ref="video"
     />
+    <!-- <img
+      id="video"
+      :class="$style.video"
+      :src="require('../../assets/stub.jpg')"
+      ref="video"
+    /> -->
     <a href="#header">
       <img
         :src="require(`../../assets/arrow-button.svg`)"
