@@ -13,27 +13,32 @@ app.get("/", (req, res) => {
 app.post("/sendEmail", (req, res) => {
   const { name, phone, date } = req.body;
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
+    host: "smtp.yandex.ru",
+    port: 465,
+    secure: true,
     auth: {
-      user: "nikoskcontacts@gmail.com",
+      user: "nikcontacts@yandex.ru",
       pass: "OskinNikez123"
-    },
-    from: "nikoskcontacts@gmail.com"
+    }
   });
   transporter
     .sendMail({
-      to: "nikoskcontacts@gmail.com",
+      from: "nikcontacts@yandex.ru",
+      to: "nikcontacts@yandex.ru",
       subject: "Заявка на видеосъемку",
-      text: "Hello world?",
+      text: "Order",
       html: `
     <h3>Имя</h3><p>${name}</p>
     <h3>Номер телефона</h3><p>${phone}</p>
     <h3>Дата</h3><p>${date}</p>
     `
     })
-    .then(res.sendStatus(200));
+    .then(success => {
+      res.send(success);
+    })
+    .catch(err => {
+      res.send(err);
+    });
 });
 
 app.listen(PORT);

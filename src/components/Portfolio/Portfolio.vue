@@ -43,6 +43,22 @@ export default {
         {
           number: 4,
           title: "Дмитрий и Любовь"
+        },
+        {
+          number: 5,
+          title: "Альберт и Алина"
+        },
+        {
+          number: 6,
+          title: "Сергей и Юлия"
+        },
+        {
+          number: 7,
+          title: "Анна и Иван"
+        },
+        {
+          number: 8,
+          title: "Павел и Дарья"
         }
       ]
     };
